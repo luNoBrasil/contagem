@@ -1,14 +1,31 @@
-/* Estilos festivos */
-body {
+/* Estilos para tela inteira */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Calibri, sans-serif; /* Usando fonte Calibri */
-    background: linear-gradient(to bottom, #FF1493, #FFFFFF); /* Fundo degradê de rosa para branco */
 }
 
+/* Fundo degradê rosa para branco */
+body {
+    background: linear-gradient(to bottom, #ff69b4, #ffffff);
+}
+
+/* Estilos festivos */
 .festive-text {
-    color: white; /* Cor do texto em branco */
-    text-align: center;
+    font-family: Calibri, sans-serif; /* Fonte Calibri */
+    font-size: 24px; /* Tamanho da fonte desejado */
+    letter-spacing: normal; /* Espaçamento simples */
+    text-align: center; /* Centraliza o texto */
+    color: black;
     margin: 0;
-    padding: 20px;
+}
+
+/* Estilos para o contêiner de imagem */
+#image-container {
+    text-align: center; /* Centraliza a imagem */
+}
+
+/* Estilos para a imagem */
+#daily-image {
+    width: 100%; /* Ajusta a largura da imagem para a tela inteira */
 }
