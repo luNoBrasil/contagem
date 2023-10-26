@@ -82,6 +82,7 @@ function updateCountdown() {
         const imageSrc = `imagens/imagem${messageIndex}.jpg`;
         const imageElement = document.createElement("img");
         imageElement.src = imageSrc;
+        imageElement.style.maxWidth = "100%"; // A imagem terá no máximo a largura da tela do celular
         imageContainer.innerHTML = '';
         imageContainer.appendChild(imageElement);
     }
