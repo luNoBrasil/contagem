@@ -13,12 +13,16 @@ body {
 /* Estilos festivos */
 .festive-text {
     font-family: Arial Rounded MT; /* Fonte Calibri */
-    font-size: 18px; /* Tamanho da fonte desejado */
+    font-size: 20px; /* Tamanho da fonte desejado */
     letter-spacing: normal; /* Espaçamento simples */
     text-align: center; /* Centraliza o texto */
     color: #694643;
     margin: 0;
 }
+.titulo-grande {
+    font-size: 36px; /* Tamanho da fonte em pixels */
+}
+
 
 /* Estilos para o contêiner de imagem */
 #image-container {
