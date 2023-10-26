@@ -7,16 +7,16 @@ html, body {
 
 /* Fundo degradê rosa para branco */
 body {
-    background: linear-gradient(to bottom, #ff69b4, #ffffff);
+    background: #F0DCD5;
 }
 
 /* Estilos festivos */
 .festive-text {
-    font-family: Calibri, sans-serif; /* Fonte Calibri */
-    font-size: 24px; /* Tamanho da fonte desejado */
+    font-family: Arial Rounded MT; /* Fonte Calibri */
+    font-size: 18px; /* Tamanho da fonte desejado */
     letter-spacing: normal; /* Espaçamento simples */
     text-align: center; /* Centraliza o texto */
-    color: black;
+    color: #694643;
     margin: 0;
 }
 
