@@ -76,10 +76,10 @@ function updateCountdown() {
         const messageIndex = messages.length - days - 1;
         const message = messages[messageIndex];
 
-        countdownText.innerHTML = `Faltam ${days} dias ${hours} horas e ${minutes} minutos  para...<br> <br> ${message}`;
+        countdownText.innerHTML = `Faltam ${days} dias ${hours} horas e ${minutes} minutos  para...<br> <br> <strong>${message}</strong> <br>`;
 
         // Adicione uma imagem com base no dia (certifique-se de que as imagens estejam na pasta 'imagens')
-        const imageSrc = `imagens/imagem${messageIndex + 1}.jpg`;
+        const imageSrc = `imagens/imagem${messageIndex}.jpg`;
         const imageElement = document.createElement("img");
         imageElement.src = imageSrc;
         imageContainer.innerHTML = '';
