@@ -79,11 +79,11 @@ function updateCountdown() {
         countdownText.innerHTML = `Faltam ${days} dias ${hours} horas e ${minutes} minutos  para...<br> <br> <strong>${message}</strong> <br>`;
 
         // Adicione uma imagem com base no dia (certifique-se de que as imagens estejam na pasta 'imagens')
-        const imageSrc = `imagens/imagem${messageIndex - 1}.jpg`;
-        const imageElement = document.createElement("img");
-        imageElement.src = imageSrc;
-        imageContainer.innerHTML = '';
-        imageContainer.appendChild(imageElement);
+        const currentDay = Math.floor(timeDifference / (1000 * 60 * 60 * 24)) + 1;
+        const imageContainer = document.getElementById('image-container');
+        const dailyImage = document.getElementById('daily-image');
+        dailyImage.src = `imagens/imagem${currentDay-1}.jpg`; // Substitua pelo caminho correto das suas imagens
+        dailyImage.alt = `Imagem do Dia ${currentDay-1}`;
     }
 }
 
