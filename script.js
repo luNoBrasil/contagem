@@ -73,7 +73,7 @@ function updateCountdown() {
         const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
 
-        const messageIndex = messages.length - days;
+        const messageIndex = messages.length - days-1;
         const message = messages[messageIndex];
 
         countdownText.innerHTML = `Faltam ${days} dias ${hours} horas e ${minutes} minutos  para...<br> <br> <strong>${message}</strong> <br>`;
