@@ -1,16 +1,16 @@
 // Array com mensagens para cada dian
 const messages = [
-    "Começa amanhã..."
+    "Mais um tempinho para iniciarmos...",
     "Cantar parabens pro Bibi",
     "Participar de festa da Isabela",
     "Receber massagem da mamae",
     "Petit gateau no Bartô",
-    "Não precisar fazer comida pra poder almoçar",
+    "Nao precisar fazer comida pra poder almoçar",
     "Praia",
     "Conhecer minha casinha",
-    "Comer strogonoff da mamãe",
+    "Comer strogonoff da mamae",
     "Passear na Paulista",
-    "Costurar na máquina de costura",
+    "Costurar na maquina de costura",
     "O melhor brigadeiro do mundo",
     "Assistir Timmy com a mamãe",
     "Ir em brechó",
@@ -51,7 +51,7 @@ const messages = [
     "Montinho na Lulu",
     "Abraços e beijinhos e carinho sem ter fim que é pra acabar com esse negócio de você longe de mim",
     "Tu vens tu vens... Eu já escuto teus sinais",
-    "Lulu chegou!!!",
+    "Lulu chegou!!!"
     
 ];
 
@@ -74,7 +74,7 @@ function updateCountdown() {
         const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
 
-        const messageIndex = messages.length - days-1;
+        const messageIndex = messages.length - days-2;
         const message = messages[messageIndex];
 
         countdownText.innerHTML = `Faltam ${days} dias ${hours} horas e ${minutes} minutos  para...<br> <br> <strong>${message}</strong> <br>`;
