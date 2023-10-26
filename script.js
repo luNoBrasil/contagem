@@ -1,4 +1,4 @@
-// Array com mensagens para cada dia 
+// Array com mensagens para cada dian
 const messages = [
     "Cantar parabens pro Bibi",
     "Participar de festa da Isabela",
@@ -67,23 +67,23 @@ function updateCountdown() {
     const timeLeft = targetDate - currentDate;
 
     if (timeLeft <= 0) {
-        countdownText.innerHTML = "O tempo acabou!";
+        countdownText.innerHTML = "Chegou o grande DIAAAA!!!";
     } else {
         const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
         const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
 
-        const messageIndex = messages.length - days - 1;
+        const messageIndex = messages.length - days;
         const message = messages[messageIndex];
 
         countdownText.innerHTML = `Faltam ${days} dias ${hours} horas e ${minutes} minutos  para...<br> <br> <strong>${message}</strong> <br>`;
 
         // Adicione uma imagem com base no dia (certifique-se de que as imagens estejam na pasta 'imagens')
-        const currentDay = Math.floor(timeDifference / (1000 * 60 * 60 * 24)) + 1;
-        const imageContainer = document.getElementById('image-container');
-        const dailyImage = document.getElementById('daily-image');
-        dailyImage.src = `imagens/imagem${currentDay-1}.jpg`; // Substitua pelo caminho correto das suas imagens
-        dailyImage.alt = `Imagem do Dia ${currentDay-1}`;
+        const imageSrc = `imagens/imagem${messageIndex}.jpg`;
+        const imageElement = document.createElement("img");
+        imageElement.src = imageSrc;
+        imageContainer.innerHTML = '';
+        imageContainer.appendChild(imageElement);
     }
 }
 
