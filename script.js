@@ -1,5 +1,6 @@
 // Array com mensagens para cada dian
 const messages = [
+    "Começa amanhã..."
     "Cantar parabens pro Bibi",
     "Participar de festa da Isabela",
     "Receber massagem da mamae",
