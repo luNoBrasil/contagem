@@ -1,4 +1,4 @@
-// Array com mensagens para cada dia
+// Array com mensagens para cada dia 
 const messages = [
     "Cantar parabens pro Bibi",
     "Participar de festa da Isabela",
@@ -79,7 +79,7 @@ function updateCountdown() {
         countdownText.innerHTML = `Faltam ${days} dias ${hours} horas e ${minutes} minutos  para...<br> <br> <strong>${message}</strong> <br>`;
 
         // Adicione uma imagem com base no dia (certifique-se de que as imagens estejam na pasta 'imagens')
-        const imageSrc = `imagens/imagem${messageIndex}.jpg`;
+        const imageSrc = `imagens/imagem${messageIndex - 1}.jpg`;
         const imageElement = document.createElement("img");
         imageElement.src = imageSrc;
         imageContainer.innerHTML = '';
