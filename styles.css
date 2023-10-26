@@ -1,8 +1,8 @@
 /* Estilos para tela inteira */
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 5;
+    padding: 5;
 }
 
 /* Fundo degradê rosa para branco */
