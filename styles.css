@@ -1,8 +1,8 @@
 /* Estilos para tela inteira */
 html, body {
     height: 100%;
-    margin: 5;
-    padding: 5;
+    margin: 3;
+    padding: 2;
 }
 
 /* Fundo degradê rosa para branco */
@@ -13,7 +13,7 @@ body {
 /* Estilos festivos */
 .festive-text {
     font-family: Arial Rounded MT; /* Fonte Calibri */
-    font-size: 20px; /* Tamanho da fonte desejado */
+    font-size: 18px; /* Tamanho da fonte desejado */
     letter-spacing: normal; /* Espaçamento simples */
     text-align: center; /* Centraliza o texto */
     color: #694643;
