@@ -7,7 +7,7 @@ const messages = [
     "Petit gateau no Bartô",
     "Nao precisar fazer comida pra poder almoçar",
     "Praia",
-    "Conhecer minha casinha",
+    "Conhecer nossa casinha",
     "Comer strogonoff da mamae",
     "Passear na Paulista",
     "Costurar na maquina de costura",
