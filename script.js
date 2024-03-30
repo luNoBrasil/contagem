@@ -1,24 +1,22 @@
 // Array com mensagens para cada dian
 const messages = [
-    "Sua missao comeca hoje...",
-    "Cantar parabens pro Bibi",
-    "Participar de festa da Isabela",
-    "Receber massagem da mamae",
-    "Petit gateau no Bartô",
-    "Nao precisar fazer comida pra poder almoçar",
-    "Praia",
-    "Conhecer nossa casinha",
-    "Comer strogonoff da mamae",
-    "Passear na Paulista",
-    "Costurar na maquina de costura",
-    "O melhor brigadeiro do mundo",
-    "Assistir Timmy com a mamãe",
-    "Ir em brechó",
-    "Picanha",
-    "Ser chamada de baixinha pelo Bibi pessoalmente",
-    "Abraço de uuuuupaaaaa",
-
-    
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
 ];
 
 // Data e hora alvo
@@ -34,7 +32,7 @@ function updateCountdown() {
     const timeLeft = targetDate - currentDate;
 
     if (timeLeft <= 0) {
-        countdownText.innerHTML = "Chegou o grande DIAAAA!!!";
+        countdownText.innerHTML = "Bem vinda.. ótimo retorno, minha estrela!!!";
     } else {
         const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
         const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
