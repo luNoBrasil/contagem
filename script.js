@@ -1,6 +1,6 @@
 // Array com mensagens para cada dian
 const messages = [
-    "Mais um tempinho para iniciarmos...",
+    "Sua missao comeca hoje...",
     "Cantar parabens pro Bibi",
     "Participar de festa da Isabela",
     "Receber massagem da mamae",
@@ -17,46 +17,12 @@ const messages = [
     "Picanha",
     "Ser chamada de baixinha pelo Bibi pessoalmente",
     "Abraço de uuuuupaaaaa",
-    "Spa",
-    "Andar de carro",
-    "Jogar pontinho",
-    "Livantto",
-    "Unha na Jô",
-    "Acordar no meu pertinho",
-    "Coxinha",
-    "Olhar pro lado esquerdo pra atravessar",
-    "Chorar no aeroporto",
-    "Melhor café da manhã com pão francês",
-    "Cabelinho cortadinho",
-    "Verão",
-    "Pão de queijo",
-    "Bater corda pro Woodynho",
-    "Detonar o Lucas no Coup",
-    "Brasileiros que abraçam, beijam e falam alto",
-    "Falar falar falar falar falar falar falar falar falar sem um telefone entre nós",
-    "Dormir no meu pertinho",
-    "Bater palma pras apresentações da Isabela e gritar.. Isabela Isabela Isabela",
-    "Pão na chapa",
-    "Meu armário é seu, seu armário é meu",
-    "Retardada",
-    "Assistir Friends com a mamãe",
-    "Museu do Ipiranga",
-    "Dormir de mão dada",
-    "Caipirinha",
-    "Sexta com Lulu",
-    "Ter mãe fotografando todos seus momentos",
-    "Fazer brownie pra mamãe",
-    "Tatooooo",
-    "Beijo de boa noite presencial",
-    "Montinho na Lulu",
-    "Abraços e beijinhos e carinho sem ter fim que é pra acabar com esse negócio de você longe de mim",
-    "Tu vens tu vens... Eu já escuto teus sinais",
-    "Lulu chegou!!!"
+
     
 ];
 
 // Data e hora alvo
-const targetDate = new Date("2023-12-16T07:10:00").getTime();
+const targetDate = new Date("2024-04-15T07:10:00").getTime();
 
 // Elementos do DOM
 const countdownText = document.getElementById("countdown-text");
@@ -80,7 +46,7 @@ function updateCountdown() {
         countdownText.innerHTML = `Faltam ${days} dias ${hours} horas e ${minutes} minutos  para...<br> <br> <strong>${message}</strong> <br>`;
 
         // Adicione uma imagem com base no dia (certifique-se de que as imagens estejam na pasta 'imagens')
-        const imageSrc = `imagens/imagem${messageIndex}.jpg`;
+        const imageSrc = `imagens/imagem${messageIndex}.jpeg`;
         const imageElement = document.createElement("img");
         imageElement.src = imageSrc;
         imageElement.style.maxWidth = "93%"; // A imagem terá no máximo a largura da tela do celular

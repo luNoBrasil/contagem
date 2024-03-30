@@ -7,20 +7,20 @@ html, body {
 
 /* Fundo degradê rosa para branco */
 body {
-    background: #F0DCD5;
+    background: #EA9D65;
 }
 
 /* Estilos festivos */
 .festive-text {
-    font-family: Arial Rounded MT; /* Fonte Calibri */
-    font-size: 18px; /* Tamanho da fonte desejado */
+    font-family: Garamond; /* Fonte Calibri */
+    font-size: 22px; /* Tamanho da fonte desejado */
     letter-spacing: normal; /* Espaçamento simples */
     text-align: center; /* Centraliza o texto */
-    color: #694643;
+    color: #FFFFFF;
     margin: 0;
 }
 .titulo-grande {
-    font-size: 36px; /* Tamanho da fonte em pixels */
+    font-size: 40px; /* Tamanho da fonte em pixels */
 }
 
 
