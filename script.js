@@ -41,7 +41,7 @@ function updateCountdown() {
         const messageIndex = messages.length - days-2;
         const message = messages[messageIndex];
 
-        countdownText.innerHTML = `Faltam ${days} dias ${hours} horas e ${minutes} minutos  para...<br> <br> <strong>${message}</strong> <br>`;
+        countdownText.innerHTML = `Faltam ${days} dias ${hours} horas e ${minutes} minutos  para minha estrela voltar<br> <br> <strong>${message}</strong> <br>`;
 
         // Adicione uma imagem com base no dia (certifique-se de que as imagens estejam na pasta 'imagens')
         const imageSrc = `imagens/imagem${messageIndex}.jpeg`;
