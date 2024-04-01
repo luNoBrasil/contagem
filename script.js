@@ -20,19 +20,19 @@ const messages = [
 ];
 
 // Data e hora alvo
-const targetDate = new Date("2024-04-15T07:10:00").getTime();
+const targetDate = new Date("2024-04-15T03:00:00").getTime();
 
 // Elementos do DOM
 const countdownText = document.getElementById("countdown-text");
 const imageContainer = document.getElementById("image-container");
 
-// Fun√ß√£o para atualizar a contagem regressiva
+// FunÁ„o para atualizar a contagem regressiva
 function updateCountdown() {
     const currentDate = new Date().getTime();
     const timeLeft = targetDate - currentDate;
 
     if (timeLeft <= 0) {
-        countdownText.innerHTML = "Bem vinda.. √≥timo retorno, minha estrela!!!";
+        countdownText.innerHTML = "Bem vinda.. Ûtimo retorno, minha estrela!!!";
     } else {
         const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
         const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -44,10 +44,10 @@ function updateCountdown() {
         countdownText.innerHTML = `Faltam ${days} dias ${hours} horas e ${minutes} minutos  para minha estrela voltar<br> <br> <strong>${message}</strong> <br>`;
 
         // Adicione uma imagem com base no dia (certifique-se de que as imagens estejam na pasta 'imagens')
-        const imageSrc = `imagens/imagem${messageIndex}.jpg`;
+        const imageSrc = `imagens/imagem${messageIndex}.jpeg`;
         const imageElement = document.createElement("img");
         imageElement.src = imageSrc;
-        imageElement.style.maxWidth = "93%"; // A imagem ter√° no m√°ximo a largura da tela do celular
+        imageElement.style.maxWidth = "93%"; // A imagem ter· no m·ximo a largura da tela do celular
         imageContainer.innerHTML = '';
         imageContainer.appendChild(imageElement);
     }
@@ -56,5 +56,5 @@ function updateCountdown() {
 // Atualize a contagem regressiva a cada segundo
 setInterval(updateCountdown, 1000);
 
-// Chame a fun√ß√£o para iniciar a contagem regressiva
+// Chame a funÁ„o para iniciar a contagem regressiva
 updateCountdown();
